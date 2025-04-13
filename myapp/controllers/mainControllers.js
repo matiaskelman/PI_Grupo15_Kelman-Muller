@@ -1,12 +1,17 @@
+const db = require('../db/db'); // Asegurate de que db.js tenga `module.exports = db;`
+
 module.exports = {
     index: (req, res) => {
-      res.render('index'); // Vista principal
+        let productos = db.posts; // 'posts' es la propiedad que tiene los productos
+        res.render('index', { productos }); // Pasás los productos a la vista
     },
+
     login: (req, res) => {
-      res.render('login'); // Vista de login
+        res.render('login');
     },
+
     productos: (req, res) => {
-      res.render('productos'); // Vista de productos
+        let productos = db.posts;
+        res.render('productos', { productos });
     }
-  }
-  
+};

@@ -12,3 +12,5 @@ let db = {
     { id: 9, img: "img1.png", nombre: "usb", descripcion: "Descripcion 10", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
     { id: 10, img: "img1.png", nombre: "usb-c", descripcion: "Descripcion 4", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] }]
 }
+
+module.exports = db;

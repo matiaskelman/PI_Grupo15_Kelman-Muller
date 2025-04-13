@@ -1,10 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const productController = require('../controllers/productController');
 
-router.get("/", function(req, res, next){res.render})
+// Ruta para mostrar un producto
+router.get('/', productController.detalle);
 
-router.get("/", productController.agregarProducto);
-
-
-
-module.exportS = productRouter;
+module.exports = router;

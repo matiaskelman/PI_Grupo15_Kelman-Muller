@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><Inicio ></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1> inicio</h1>
-    <p>Welcome to  inicio </p>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <h1>Lista de productos</h1>
+  <ul>
+    <% productos.forEach(function(producto) { %>
+      <li>
+        <%= producto.nombre %> - 
+        <a href="/products/<%= producto.id %>">Ver detalle</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
 </html>
