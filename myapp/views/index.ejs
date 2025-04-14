@@ -6,6 +6,8 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+  <%- include('partials/header') %>
+
   <h1>Lista de productos</h1>
   <ul>
     <% productos.forEach(function(producto) { %>
@@ -15,5 +17,7 @@
       </li>
     <% }) %>
   </ul>
+    <%- include('partials/footer') %>
 </body>
+
 </html>
