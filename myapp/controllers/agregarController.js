@@ -1,4 +1,4 @@
-const usuario = require("../db/users");
+const db = require('../db/db');
 
 const addProducto = {
     addProducto: function (req, res) {

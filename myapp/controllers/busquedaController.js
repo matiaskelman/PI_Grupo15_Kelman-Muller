@@ -1,3 +1,5 @@
+const users = require('../db/db');
+
 const busquedaControllers =  {
     busqueda: function(req, res) {
       const requerimiento = req.query.search;

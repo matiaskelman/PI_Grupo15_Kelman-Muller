@@ -28,12 +28,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', usersRouter);
-app.use('/login',loginRouter );
-app.use('/product',productRouter );
-app.use('/register',registerRouter );
-app.use('/prfile',profileRouter );
-app.use('/search',searchRouter );
-app.use('/productAdd',productAddRouter );
+//app.use('/login',loginRouter );
+//app.use('/product',productRouter );
+//app.use('/register',registerRouter );
+//app.use('/prfile',profileRouter );
+//app.use('/search',searchRouter );
+//app.use('/productAdd',productAddRouter );
 
 
 
