@@ -5,10 +5,10 @@ USE TP_Prog2_Kelman_Muller;
 CREATE TABLE users (
 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, 
 email varchar(100),
-contraseña varchar(100),
+contrasena varchar(100),
 fecha date,
-DNI INT UNSIGNED ,
-foto_perfil varchar(10000) default NULL,
+dni INT UNSIGNED ,
+fotoPerfil varchar(10000) default NULL,
 createdAt timestamp default current_timestamp,
 updatedAt timestamp default current_timestamp on update current_timestamp,
 deletedAt timestamp null on update current_timestamp
@@ -16,10 +16,10 @@ deletedAt timestamp null on update current_timestamp
 
 CREATE TABLE products (
 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, 
-archivo_img text NOT NULL UNIQUE,
+archivoImg text NOT NULL UNIQUE,
 nombre text NOT NULL,
 descripcion text NOT NULL,
-foreign key (users_id) references users(id),
+foreign key (usersId) references users(id),
 createdAt timestamp default current_timestamp,
 updatedAt timestamp default current_timestamp on update current_timestamp,
 deletedAt timestamp null on update current_timestamp
@@ -27,8 +27,8 @@ deletedAt timestamp null on update current_timestamp
 
 CREATE TABLE comentarios (
 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, 
-foreign key (users_id) references users(id),
-foreign key (productos_id) references productos(id),
+foreign key (usersId) references users(id),
+foreign key (productosId) references productos(id),
 descripcion text NOT NULL,
 createdAt timestamp default current_timestamp,
 updatedAt timestamp default current_timestamp on update current_timestamp,
