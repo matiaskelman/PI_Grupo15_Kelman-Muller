@@ -6,12 +6,8 @@ var logger = require('morgan');
 
 const routes = require('./routes/index');
 const usersRouter = require('./routes/users');
-const loginRouter = require('./routes/login');
-const productRouter = require('./routes/product');
-const registerRouter = require('./routes/register');
-const profileRouter = require('./routes/profile');
-const searchRouter = require('./routes/search');
-const productAddRouter = require('./routes/productAdd');
+
+
 
 var app = express();
 //commit prueba
@@ -27,14 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', usersRouter);
-//app.use('/login',loginRouter );
-//app.use('/product',productRouter );
-//app.use('/register',registerRouter );
-//app.use('/prfile',profileRouter );
-//app.use('/search',searchRouter );
-//app.use('/productAdd',productAddRouter );
-
+app.use('/', usersRouter);
 
 
 
