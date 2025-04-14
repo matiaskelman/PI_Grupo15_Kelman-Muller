@@ -1,5 +1,5 @@
 let db = {
-    usuario: { id: 1, email: "a@gmail.com", contraseña: "12345678!", fecha: "1/1/3", fotoPerfil: "" },
+    usuario: {nombre:"Matias Kelman" , id: 1, email: "a@gmail.com", contraseña: "12345678!", fecha: "1/1/3", fotoPerfil: "" },
     posts: [
     { id: 1, img: "img1.png", nombre: "Plancha", descripcion: "Descripcion 1", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
     { id: 2, img: "img1.png", nombre: "Jarra", descripcion: "Descripcion 2", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
