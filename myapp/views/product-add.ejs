@@ -13,7 +13,7 @@
 	<!-- Bootstrap Grid Stylesheet -->
 	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body>
@@ -27,13 +27,6 @@
 					</a>
 				</div>
 	
-				<div class="col-7 col-md-6">
-					<form action="" method="GET" class="search-form">
-						<input type="text" name="search" placeholder="Buscar productos, marcas y más"
-							class="search-form_input">
-						<button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
-					</form>
-				</div>
 	
 				<div class="col-12 col-md-4">
 					<a class="main-header_credit-link">
@@ -83,14 +76,30 @@
 		<div class="row">
 			<div class="col-12">
 				<h2 class="products-title">Agregar productos</h2>
+				<div class="col-7 col-md-6">
+					<form class="formulario-login" action="/" method="get">
+						<div class="label-email">
+						  <label for="email">Imagen</label>
+						  <input type="file" name="email" id="email" value="" class="input-email" />
+						</div>
+					  
+						<div class="label-productName">
+						  <label for="productName">Nombre del producto</label>
+						  <input type="text" name="productName" id="productName" value="" class="input-productName" />
+						</div>
+					  
+						<div class="label-desc">
+						  <label for="checkbox">Descripción</label>
+						  <input type="text" name="desc" id="desc" value="" class="input-desc" />
+						</div>
+					  
+						<button class="button-log" type="submit">Iniciar Sesión</button>
+					  </form>
+					  
+				</div>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<h2 class="col-12"> <i>///////////////////////////////////////// <br> Acá va el formulario para agregar prodcutos al catálogo. <br>
-			Debe cumplir con los puntos de la consigna y ser coherente con la tabla de la base de datos. <br>
-			Eliminen estás líneas y coloquen el formulario. <br>
-			Recuerden todo lo que necesita tanto la etiqueta form como los campos input para operar correctamtente</i> <br>
-			////////////////
-			</h2>
+			
 
 
 	<!-- footer -->
