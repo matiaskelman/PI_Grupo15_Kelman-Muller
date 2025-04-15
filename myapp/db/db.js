@@ -1,16 +1,16 @@
 let db = {
-    usuario: {nombre:"Matias Kelman" , id: 1, email: "a@gmail.com", contraseña: "12345678!", fecha: "1/1/3", fotoPerfil: "" },
+    usuario: [{nombre:"Matias Kelman" , id: 1, email: "a@gmail.com", contraseña: "12345678!", fecha: "1/1/3", fotoPerfil: "/images/users/user1.jpg" },{nombre:"Rafael Muller" , id: 2, email: "a@gmail.com", contraseña: "12345678!", fecha: "1/1/3", fotoPerfil: "/images/users/user1.jpg" } ],
     posts: [
-    { id: 1, img: "img1.png", nombre: "Plancha", descripcion: "Descripcion 1", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 2, img: "img1.png", nombre: "Jarra", descripcion: "Descripcion 2", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 3, img: "img1.png", nombre: "Plastico", descripcion: "Descripcion 3", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 4, img: "img1.png", nombre: "Goma", descripcion: "Descripcion 5", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 5, img: "img1.png", nombre: "Mouse", descripcion: "Descripcion 6", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 6, img: "img1.png", nombre: "Computadora", descripcion: "Descripcion 7", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 7, img: "img1.png", nombre: "Licuadora", descripcion: "Descripcion 8", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 8, img: "img1.png", nombre: "Teclado", descripcion: "Descripcion 9", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 9, img: "img1.png", nombre: "usb", descripcion: "Descripcion 10", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
-    { id: 10, img: "img1.png", nombre: "usb-c", descripcion: "Descripcion 4", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] }]
+    { id: 1, img: "/images/products/bucksRemera.webp", nombre: "Remera Bucks", descripcion: "Remera de los Bucks", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 2, img: "/images/products/lakersRemera.webp", nombre: "Remera Lakers", descripcion: "Remera de los Lakers", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 3, img: "/images/products/lakersBuzo.webp", nombre: "Buzo Lakers", descripcion: "Buzo de Lakers", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 4, img: "/images/products/nbaRemera.webp", nombre: "NBA Remera", descripcion: "Remera de la NBA", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 5, img: "/images/products/nuggetsRemera.webp", nombre: "Remera Nuggets", descripcion: "Remera de los Nuggets", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 6, img: "/images/products/sunsRemera.webp", nombre: "Remera Suns", descripcion: "Remera de los Suns", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 7, img: "/images/products/warriorsRemera.webp", nombre: "Remera Warriors", descripcion: "Remera de los Warriors", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 8, img: "/images/products/timberwolvesRemera.webp", nombre: "Remera Timberwolves", descripcion: "Remera de los TimberWolves", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 9, img: "/images/products/mavsRemera.webp", nombre: "Remera Mavs", descripcion: "Remera de los Mavericks", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] },
+    { id: 10, img: "/images/products/celticsBuzo.webp", nombre: "Buzo Celtics", descripcion: "Buzo de los Celtics", user: 1, comentarios: [{ user: 1, texto: "Texto comentario" }, { user: 2, texto: "Texto comentario 2" }, { user: 1, texto: "Texto comentario 3" }] }]
 }
 
 module.exports = db;
