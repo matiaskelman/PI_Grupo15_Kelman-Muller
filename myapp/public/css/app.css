@@ -4,15 +4,14 @@
 
 /*====== Variables ======*/
 :root {
-  --yellow: #EAC926;
-  --dark-blue: #03264C;
+  --yellow: orange;
+  --dark-blue: orange;
   --light-blue: #1259c3;
   --gray: #666666;
   --light-gray: #ebebeb;
   --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif
+  --base-font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /*====== Basics ======*/
 * {
@@ -269,7 +268,7 @@ hr {
 }
 
 .footer-data i {
-  color: var(--light-blue);
+  color: orange;
   font-size: 3.5em;
 }
 
