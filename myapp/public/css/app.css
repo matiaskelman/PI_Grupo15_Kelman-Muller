@@ -222,6 +222,8 @@ hr {
   overflow: hidden;
 }
 
+.formAddProduct {color: white;}
+
 .product-box_data i {
   color: var(--green);
   font-size: 1.8em;
