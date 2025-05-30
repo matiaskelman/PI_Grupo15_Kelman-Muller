@@ -1,1 +1,3 @@
-let logueado = false;
+let logueado = {logueado: "true"};
+
+module.exports = logueado;
