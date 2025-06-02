@@ -2,7 +2,7 @@ module.exports={
   "development": {
     "username": "root",
     "password": null, //Contraseña igual a la de la DB
-    "database": "database_development", //Nombre de la DB igual a la de MYSQL
+    "database": "TP_Prog2_Kelman_Muller", //Nombre de la DB igual a la de MYSQL
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
