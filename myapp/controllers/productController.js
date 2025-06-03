@@ -3,15 +3,6 @@ const db = require("../database/models"); // Asegurate de que db.js tenga `modul
 const logueado = require("../db/logueado");
 const op = db.Sequelize.Op;
 const Productos = db.Product
-
-// const productoController = {
-//   detalle: function (req, res) {
-//     let idProducto = parseInt(req.params.id);
-//     let producto = db.posts.find(p => p.id === idProducto);
-//     res.render('product', { producto });
-//   }
-// };
-
 const productoController = {
   detalle: function (req, res) {
        let idProducto = parseInt(req.params.id);
