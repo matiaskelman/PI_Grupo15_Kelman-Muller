@@ -3,10 +3,10 @@
 <!-- Include Head -->
 <%- include('partials/head') %>
 <body>
-	<% if (isLogged == "false") { %>
+	<% if (isLogged == "true") { %>
 	<%- include('partials/headerLogueado') %>
 	<% } %>
-	<% if ( isLogged == "true") {%>
+	<% if ( isLogged == "false") {%>
 		<%- include('partials/header') %>
 	<% } %>
 	<!-- Banner -->
