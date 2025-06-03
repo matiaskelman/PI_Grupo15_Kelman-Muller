@@ -18,11 +18,16 @@
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="<%= producto.img %>" alt="<%= producto.nombre %>" class="product-detail-img">
+					<img src="<%= producto.archivoImg %>" alt="<%= producto.nombre %>" class="product-detail-img">
 					<p class="product-detail-description">
 						<%= producto.descripcion %>.</p>
 				</article>
-				<div class="col-12 col-lg-4">
+			
+			</div>
+		</div>
+	</div>
+	<!-- /product detail -->
+	<!-- <div class="col-12 col-lg-4">
 					<section class="comments">
 						<% for (let i = 0; i < producto.comentarios.length; i++) { %>
 						<article>
@@ -41,12 +46,7 @@
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 					</form>
 					<hr>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /product detail -->
-
+				</div> -->
 	<!-- footer -->
 	<footer class="main-footer">
 		<div class="container">
