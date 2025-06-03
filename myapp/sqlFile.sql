@@ -44,16 +44,16 @@ INSERT INTO users(id, email, contraseña, fecha, dni, fotoPerfil) VALUES (DEFAUL
 INSERT INTO users(id, email, contraseña, fecha, dni, fotoPerfil) VALUES (DEFAULT, "d@gmail.com", "12345675!", 2008-11-11, 12345678, DEFAULT);
 INSERT INTO users(id, email, contraseña, fecha, dni, fotoPerfil) VALUES (DEFAULT, "e@gmail.com", "12345675!", 2008-11-11, 12345678, DEFAULT);
 
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img2.png", "Plancha", "aaaaaa", 1);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img3.png", "Jarra", "aaaaaa", 2);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img4.png", "Plastico", "aaaaaa", 3);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img5.png", "Goma", "aaaaaa", 4);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img6.png", "Mouse", "aaaaaa", 5);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img7.png", "Computadora", "aaaaaa", 1);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img8.png", "Licuadora", "aaaaaa", 2);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img9.png", "Teclado", "aaaaaa", 3);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img10.png", "usb", "aaaaaa", 4);
-INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"img1.png", "usb-c", "aaaaaa", 5);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/bucksRemera.webp", "Remera Bucks", "Remera de los Bucks", 1);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/lakersRemera.webp", "Remera Lakers", "Remera de los Lakers", 2);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/lakersBuzo.webp", "Buzo Lakers", "Buzo de Lakers", 3);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/nbaRemera.webp", "NBA Remera", "Remera de la NBA", 4);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/nuggetsRemera.webp", "Remera Nuggets", "Remera de los Nuggets", 5);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/sunsRemera.webp", "Remera Suns", "Remera de los Suns", 1);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/warriorsRemera.webp", "Remera Warriors", "Remera de los Warriors", 2);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/timberwolvesRemera.webp", "Remera Timberwolves", "Remera de los Timberwolves", 3);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/mavsRemera.webp", "Remera Mavs", "Remera de los Mavericks", 4);
+INSERT INTO products(id, archivoImg, nombre, descripcion, users_id) VALUES (DEFAULT,"/images/products/celticsBuzo.webp", "Buzo Celtics","Buzo de los Celtics", 5);
 
 INSERT INTO comentarios(id, users_id, productos_id, descripcion) VALUES (DEFAULT,1,1, "1user 1post aaaaaa");
 INSERT INTO comentarios(id, users_id, productos_id, descripcion) VALUES (DEFAULT,2,1, "2user 1post aaaaaa");
