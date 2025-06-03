@@ -22,20 +22,15 @@
 					<p class="product-detail-description">
 						<%= producto.descripcion %>.</p>
 				</article>
-			
-			</div>
-		</div>
-	</div>
-	<!-- /product detail -->
-	<!-- <div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-4">
 					<section class="comments">
-						<% for (let i = 0; i < producto.comentarios.length; i++) { %>
+						<% for (let i = 0; i < producto.Comentario.length; i++) { %>
 						<article>
 							
 							<div class="data">
 								<p class="user">
 
-								<%= producto.comentarios[i].texto %></p>
+								<%= producto.Comentario[i].descripcion %></p>
 							</div>
 						</article>
 						<% } %>
@@ -46,7 +41,12 @@
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 					</form>
 					<hr>
-				</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /product detail -->
+	 
 	<!-- footer -->
 	<footer class="main-footer">
 		<div class="container">

@@ -1,9 +1,9 @@
 module.exports = (sequelize, dataTypes) => {
   let alias = "Comentario"
   let cols = {
-    id: { type: dataTypes.INTEGER, primaryKey: true},
+    id: { type: dataTypes.INTEGER, primaryKey: true },
     users_id: { type: dataTypes.INTEGER },
-    producto_id: { type: dataTypes.INTEGER },
+    productos_id: { type: dataTypes.INTEGER },
     descripcion: { type: dataTypes.TEXT },
 
   }
@@ -19,9 +19,9 @@ module.exports = (sequelize, dataTypes) => {
       foreignKey: "productos_id"
     },
       Comentario.belongsTo(models.User, {
-      as: "User",
-      foreignKey: "users_id"
-    }))
+        as: "User",
+        foreignKey: "users_id"
+      }))
   }
   return Comentario
 }

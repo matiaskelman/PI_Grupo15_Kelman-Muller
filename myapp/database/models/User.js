@@ -1,12 +1,12 @@
-module.exports =  (sequelize, dataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = "User"
     let cols = {
-id: {type: dataTypes.INTEGER, primaryKey: true,},
-email: {type: dataTypes.STRING},
-contraseña: {type: dataTypes.STRING},
-fecha: {type: dataTypes.DATE},
-dni: {type: dataTypes.INTEGER},
-fotoPerfil: {type: dataTypes.STRING} ,
+        id: { type: dataTypes.INTEGER, primaryKey: true, },
+        email: { type: dataTypes.STRING },
+        contraseña: { type: dataTypes.STRING },
+        fecha: { type: dataTypes.DATE },
+        dni: { type: dataTypes.INTEGER },
+        fotoPerfil: { type: dataTypes.STRING },
 
     }
     let config = {
