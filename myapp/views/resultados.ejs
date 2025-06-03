@@ -31,11 +31,11 @@
 					
 				  <a href="/products/<%= resultados[i].id %>">
 					<figure class="product-box_image">
-					  <img src="<%= resultados[i].img %>" alt="<%= resultados[i].nombre %>">
+					  <img src="<%= resultados[i].archivoImg %>" alt="<%= resultados[i].nombre %>">
 					</figure>
 					<article class="product-box_data">
 					  <h2><%= resultados[i].nombre %></h2>
-					  <p><%= resultados[i].users_id %></p>
+					<p>Publicado por: <%= resultados[i].User.email %></p>
 					  <p><%= resultados[i].descripcion %></p>
 					</article>
 				  </a>

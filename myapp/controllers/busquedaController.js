@@ -6,14 +6,16 @@ const busquedaControllers =  {
     busqueda: function(req, res) {
       const requerimiento = req.query.search;
       
-  Productos.findAll(
-   {    where: [
-                    {  nombre: {[op.like]: `%${requerimiento}%` } }
-                ]}
+  Productos.findAll( {
+    include: [{ association: 'User' }],
+    where: [{  nombre: {[op.like]: `%${requerimiento}%` } }]
+  }
   ).then(function (resultados) {
     console.log(resultados)
 return  res.render('resultados', { resultados, resultados});
-  })
+  }).catch(function(e){
+                return res.send(e)
+            });
     
   
      

@@ -24,11 +24,11 @@
 					
 				  <a href="/products/<%= productos[i].id %>">
 					<figure class="product-box_image">
-					  <img src="<%= productos[i].img %>" alt="<%= productos[i].nombre %>">
+					  <img src="<%= productos[i].archivoImg %>" alt="<%= productos[i].nombre %>">
 					</figure>
 					<article class="product-box_data">
 					  <h2><%= productos[i].nombre %></h2>
-					  <p>Publicado por: <%= productos[i].User.email %></p>
+					 <a href="/perfil/<%= productos[i].User.id %>"><p>Publicado por: <%= productos[i].User.email %></p></a>
 					  <p><%= productos[i].descripcion %></p>
 					</article>
 				  </a>

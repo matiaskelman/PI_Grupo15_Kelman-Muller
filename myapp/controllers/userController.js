@@ -1,4 +1,7 @@
-const db = require('../db/db');
+const db = require("../database/models"); // Asegurate de que db.js tenga `module.exports = db;`
+const logueado = require("../db/logueado");
+const User = db.User;
+const op = db.Sequelize.Op;
 
 
 const userController = {
@@ -9,8 +12,11 @@ const userController = {
     res.render('login');
   },
   profile: function(req, res) {
-    let Usuario = db.usuario; 
-    res.render('perfil', { perfil:Usuario});
+       let pk = req.params.id;
+    User.findByPk(pk).then(function(resultado){
+         return res.render('perfil', { usuario: resultado});
+    })
+ 
   }
 };
 
