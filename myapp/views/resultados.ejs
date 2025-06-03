@@ -21,7 +21,11 @@
 
 		<div class="container products-wrapper">
 		<div class="row">
-			<% for(let i = 0; i < resultados.length; i++) { %>
+			<% if (resultados.length < 1){ %>
+				<p>No se encontraron resultados</p>
+				<% } %>
+					<% if (resultados.length >= 1){ %>
+				<% for(let i = 0; i < resultados.length; i++) { %>
 			  <div class="col-12 col-sm-6 col-lg-3">
 				<section class="product-box">
 					
@@ -37,6 +41,8 @@
 				</section>
 			  </div>
 			<% } %>
+				<% } %>
+		
 		</div>
 	</div>
 
