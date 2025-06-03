@@ -9,5 +9,6 @@ router.get('/', productController.detalle);
 router.get('/add', (req, res) => {
   res.render('product-add');
 });
+router.post('/product-add', productController.createProduct)
 
 module.exports = router;

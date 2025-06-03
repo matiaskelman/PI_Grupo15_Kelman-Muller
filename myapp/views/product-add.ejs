@@ -17,20 +17,20 @@
 			<div class="col-12">
 				<h2 class="products-title">Agregar productos</h2>
 				<div class="col-7 col-md-6">
-					<form class="formulario-login formAddProduct" action="/" method="get">
+					<form class="formulario-login formAddProduct" action="/product/product-add" method="POST">
 						<div class="label-email">
 						  <label for="email">Imagen</label>
-						  <input type="file" name="email" id="email" value="" class="input-email" />
+						  <input type="text" name="archivoImg" id="archivoImg" class="input-email" />
 						</div>
 					  
 						<div class="label-productName">
 						  <label for="productName">Nombre del producto</label>
-						  <input type="text" name="productName" id="productName" value="" class="input-productName" />
+						  <input type="text" name="nombre" id="nombre" value="" class="input-productName" />
 						</div>
 					  
 						<div class="label-desc">
 						  <label for="checkbox">Descripción</label>
-						  <input type="text" name="desc" id="desc" value="" class="input-desc" />
+						  <input type="text" name="descripcion" id="descripcion" value="" class="input-desc" />
 						</div>
 					  
 						<button class="button-log" type="submit">Agregar</button>

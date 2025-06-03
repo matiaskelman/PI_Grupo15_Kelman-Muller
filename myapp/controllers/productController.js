@@ -16,7 +16,23 @@ const productoController = {
       res.render('product', { producto });
     })
   
-  }
+  },
+createProduct: function (req, res) {
+  let archivoImg = req.body.archivoImg;
+  let nombre = req.body.nombre;
+  let descripcion = req.body.descripcion;
+  let users_id = 1;
+
+  Productos.create({
+    archivoImg: archivoImg,
+    nombre: nombre,
+    descripcion: descripcion,
+    users_id : users_id
+  }).then(function(r){
+    return res.redirect("/")
+  })
+}
 };
+
 module.exports = productoController;
 
