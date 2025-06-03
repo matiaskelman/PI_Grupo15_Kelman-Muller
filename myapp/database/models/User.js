@@ -14,6 +14,16 @@ fotoPerfil: {type: dataTypes.STRING} ,
         timestamps: false
     }
     const User = sequelize.define(alias, cols, config);
+    User.associate = function (models) {
+        User.hasMany(models.Product, {
+            as: "Product",
+            foreignKey: "users_id"
+        });
+        User.hasMany(models.Comentario, {
+            as: "Comentario",
+            foreignKey: "users_id"
+        })
+    }
 
     return User
 }

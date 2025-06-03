@@ -5,10 +5,13 @@ module.exports = {
     index: function (req, res) {
         let isLogged = logueado.logueado;
         console.log(isLogged)
-        Productos.findAll()
+        Productos.findAll({include: [{ association: 'User' }]})
             .then(function(productos) 
             {
                 res.render('index', { productos: productos, isLogged: isLogged })
+            })
+            .catch(function(e){
+                return res.send(e)
             });
     },
 
